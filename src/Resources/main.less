@@ -1,0 +1,133 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    padding: 4px;
+}
+
+.contentHolder {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #e0eaf0;
+    margin: 0px;
+}
+
+.movieForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: #7c8dba;
+    border-radius: 8px;
+    color: #0d2053;
+    height: fit-content;
+}
+
+.movieForm > * {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.inputTitle,
+.inputRating {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.inputTitle label {
+    padding-bottom: 4px;
+}
+
+.inputRatingHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+
+.submit {
+    margin: 0 auto;
+}
+
+.submit button {
+    color: #0d2053;
+}
+
+.listContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.listContent {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.movieItemContainer {
+    height: 200px;
+    overflow: auto;
+    margin: 10px 0;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.listContent .listItem:hover {
+    opacity: 0.85;
+}
+
+.listItem:nth-child(odd) {
+    background: #6da7ac;
+}
+.listItem:nth-child(even) {
+    background: #41868c;
+}
+
+.movieTitle {
+    margin: 0 10px;
+}
+
+.movieRating {
+    margin: 0 30px;
+}
+
+.deleteIcon {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.listItem .deleteIcon {
+    visibility: hidden;
+}
+
+.listItem:hover .deleteIcon {
+    visibility: visible;
+}
+  
