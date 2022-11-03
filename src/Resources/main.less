@@ -1,7 +1,8 @@
 .App {
     font-family: sans-serif;
     text-align: center;
-    width: 100%;
+    margin: 0 32px;
+    letter-spacing: 1px;
 }
 
 button {
@@ -130,4 +131,129 @@ button {
 .listItem:hover .deleteIcon {
     visibility: visible;
 }
+
+
+// NEW APP below
+
+.movie-container {
+    background-color: rgb(41, 41, 41);
+    color: rgb(240,240,240,);
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 24px 0
+}
+
+.movie-metadata {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    div {
+        color: rgb(163, 163, 163);
+    }
+}
+
+.movie-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rating-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+.rating-header {
+    margin-bottom: 8px;
+    color: rgb(163, 163, 163);
+
+}
+
+.tmdb-rating-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 8px;
+    height: 100%;
+}
+
+
+.your-rating-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(87, 153, 239);
+    padding: 0 8px;
+    height: 100%;
+   
+}
+
+.your-rating-content:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.rating-values-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rating-values { 
+    display: flex;
+    align-items: center;
+}
+
+.tmdbRating-icon {
+    margin: 0 8px;
+    color: gold;
+}
+
+.myRating-icon {
+    margin: 0 8px;
+}
+
+.vote-average {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vote-range {
+    font-weight: normal;
+    color: rgb(163, 163, 163);
+}
+
+.vote-count {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(163, 163, 163);
+}
+
+.movie-overview {
+    margin: 100px;
+}
   
+.ratingModalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        margin: 4px 0px;
+    }
+}

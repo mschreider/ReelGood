@@ -1,6 +1,7 @@
 import React from "react"
+import ApiManager from "../Api/ApiManager";
 
-function SearchBar(props) {
+function SearchReviews(props) {
     const editSearchTerm = (e) => {
       props.searchTerm(e.target.value);
     };
@@ -9,5 +10,5 @@ function SearchBar(props) {
     );
 }
   
-export default SearchBar;
+export default SearchReviews;
   

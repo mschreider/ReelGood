@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Button, Text, Box } from '@mantine/core';
+import {SubmitButtonStyle} from '../Utilities/ComponentStyles.js'
 
 function MovieForm(props) {
   const [movie, setMovie] = useState({
@@ -57,9 +59,9 @@ function MovieForm(props) {
         />
       </div>
       <div className="submit">
-        <button type="submit" onClick={onFormSubmit}>
+        <Button sx={SubmitButtonStyle} onClick={onFormSubmit}>
           Submit
-        </button>
+        </Button>
       </div>
     </form>
   );
