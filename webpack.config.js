@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+require('dotenv').config()
 
 /*
 TODO REMOVE: https://stackoverflow.com/questions/50824024/urierror-failed-to-decode-param-public-url-favicon-ico
