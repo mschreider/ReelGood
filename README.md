@@ -1,5 +1,5 @@
-#ReelGood
-Web application that lets users search and review movies from IMDB databse API
+# ReelGood
+ Web application that lets users search and review movies from IMDB databse API
 
 ## Getting Started with Create React App
 
